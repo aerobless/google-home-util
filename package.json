@@ -1,0 +1,22 @@
+{
+  "name": "google-home-util",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aerobless@github.com/aerobless/google-home-util.git"
+  },
+  "author": "Theodor Winter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aerobless/google-home-util/issues"
+  },
+  "homepage": "https://github.com/aerobless/google-home-util#readme",
+  "dependencies": {
+    "google-home-notifier": "^1.0.0"
+  }
+}
