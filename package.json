@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aerobless/google-home-util#readme",
   "dependencies": {
-    "google-home-notifier": "^1.0.0"
+    "google-home-notifier": "^1.0.0",
+    "log-timestamp": "^0.1.2"
   }
 }

@@ -1,6 +1,6 @@
+require('log-timestamp');
 var express = require('express');
 var googlehome = require('google-home-notifier');
-var ngrok = require('ngrok');
 var bodyParser = require('body-parser');
 var app = express();
 const serverPort = 8080;
@@ -35,17 +35,15 @@ app.post('/google-home-notifier', urlencodedParser, function (req, res) {
             res.send('Please POST "text=Hello Google Home"');
         }
     } else {
-        console.log("Suppressed notification because it is night!")
+        var message = "Suppressed notification because it is night!";
+        res.send(message);
+        console.log(message);
     }
-
 });
 
 app.listen(serverPort, function () {
-    ngrok.connect(serverPort, function (err, url) {
-        console.log('POST "text=Hello Google Home" to:');
-        console.log('    http://localhost:' + serverPort + '/google-home-notifier');
-        console.log('    ' + url + '/google-home-notifier');
-        console.log('example:');
-        console.log('curl -X POST -d "text=Hello Google Home" ' + url + '/google-home-notifier');
-    });
+    console.log('POST "text=Hello Google Home" to:');
+    console.log('    http://localhost:' + serverPort + '/google-home-notifier');
+    console.log('example:');
+    console.log('curl -X POST -d "text=Hello Google Home" http://localhost:' + serverPort + '/google-home-notifier');
 });
