@@ -8,7 +8,7 @@ Provides a way to send voice messages to Google Home via HTTP POST.
 
 ### Run
 
-`node index.js`
+  `node index.js`
 
 ### Access from everywhere (Internet)
 
