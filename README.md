@@ -1,6 +1,6 @@
 # google-home-util
 
-Provides a way to send voice messages to Google Home via HTTP POST.
+  Provides a way to send voice messages to Google Home via HTTP POST.
 
 ### Installation
 
