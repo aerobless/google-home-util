@@ -4,7 +4,7 @@ Provides a way to send voice messages to Google Home via HTTP POST.
 
 ### Installation
 
-`npm install`
+  `npm install`
 
 ### Run
 
